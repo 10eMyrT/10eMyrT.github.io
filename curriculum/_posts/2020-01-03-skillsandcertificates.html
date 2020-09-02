@@ -1,0 +1,107 @@
+---
+layout: default
+title: Skills & Certificates
+permalink: /skillsandcertificates
+images:
+- /assets/img/curriculum/skills.png
+---
+
+<div class="portfolio-modal mfp-hide" id="portfolio-modal-21" style="margin-top: 120px">
+  <div class="portfolio-modal-dialog bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="text-secondary text-uppercase mb-0 text-center">Skills</h3>
+          <hr class="star-dark mb-5">
+          <h5 class="subheading text-secondary">Programming Languages &amp; Tools</h5>
+          <ul class="col list-inline dev-icons">
+              {% for type in site.data.skills %}
+                  {% assign category = type[1] %}
+                  <div class="container">
+                      <h6 class="subheading mt-3 text-dark">{{category.type}}</h6>
+                      {% for skill in category.tools %}
+                          <li class="list-inline-item pr-3 py-2">
+                              <a class="text-align-center">
+                                  <img width="45px" height="45px" src="{{skill.link}}" alt="">
+                                  <br><text class="text-secondary text-center" style="font-family:verdana; font-size:12pt">{{skill.name}}</text>
+                              </a>
+                          </li>
+                      {% endfor %}
+                  </div>
+              {% endfor %}
+          </ul>
+          <h5 class="subheading mb-3 text-secondary">Languages</h5>
+          <ul class="fa-ul mb-3">
+              <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                  French</font>
+              </li>
+              <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                  English</font>
+              </li>
+              <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                  Mandarin</font>
+              </li>
+          </ul>
+          <h5 class="subheading mb-3 text-secondary">Other aptitudes</h5>
+          <ul class="fa-ul mb-3">
+              <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                  Research &amp; Development</font>
+              </li>
+              <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                  Collaboration &amp; teamwork</font>
+              </li>
+              <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                  Details &amp; big picture oriented</font>
+              </li>
+              <li><font color = "black"><i class="fa-li fa fa-check"></i>
+                  Devotion for quick learning</font>
+              </li>
+          </ul>
+        </div>
+        <div class="col-lg-8 mx-auto mt-5">
+          <h3 class="text-secondary text-uppercase mb-0 text-center">Certificates</h3>
+          <hr class="star-dark mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+              <div class="resume-content">
+                  <h5 class="mb-0 text-secondary">Rochester Institute of Technology</h5>
+                  <div class="subheading mb-6 text-secondary">Foundational Leadership for Career Success Certificate</div>
+                  <div class="subheading mb-6 text-dark"><i>Awarded</i> May 2020</div>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+              <div class="resume-content">
+                  <h5 class="mb-0 text-secondary">LinkedIn Learning</h5>
+                  <div class="subheading mb-6 text-secondary">DevOps Foundations: Site Reliability Engineering</div>
+                  <div class="subheading mb-6 text-dark"><i>Awarded</i> May 2020</div>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+              <div class="resume-content">
+                  <h5 class="mb-0 text-secondary">LinkedIn Learning</h5>
+                  <div class="subheading mb-6 text-secondary">Cloud Native Development with Node.js, Docker, and Kubernetes</div>
+                  <div class="subheading mb-6 text-dark"><i>Awarded</i> May 2020</div>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+              <div class="resume-content">
+                  <h5 class="mb-0 text-secondary">LinkedIn Learning</h5>
+                  <div class="subheading mb-6 text-secondary">Kubernetes: Microservices</div>
+                  <div class="subheading mb-6 text-dark"><i>Awarded</i> May 2020</div>
+              </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+              <div class="resume-content">
+                  <h5 class="mb-0 text-secondary">The Beninese Centre for Foreign Languages - CEBELAE, UAC</h5>
+                  <div class="subheading mb-6 text-secondary">Certificate of Proficiency in English and Business Communication</div>
+                  <div class="subheading mb-6 text-dark"><i>Awarded</i> February 2012</div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-8 mx-auto text-center ">
+            <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="/">
+              <i class="fa fa-close"></i> Close</a>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>

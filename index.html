@@ -2,11 +2,11 @@
 layout: default
 title: Kevin Assogba
 images:
-- /assets/img/gallery/stem.jpg
 - /assets/img/gallery/non_return_gate.jpg
 - /assets/img/gallery/monument.jpg
 - /assets/img/gallery/innovation.jpg
 ---
+
 
 <div class="img-animtion" id="gallery" style="padding-top:60px">
     {% include gallery.html %}
@@ -30,39 +30,30 @@ images:
 
 <!-- Curriculum Section -->
 <section class="masthead bg-secondary text-white mb-0" id="curriculum">
-    <div class="container mb-5">
-        <h3 class="text-center text-uppercase text-white mb-5">Curriculum</h3>
-        <nav class="navbar justify-content-center background-color: transparent" style="list-style: none;">
-            <button type="button" class="lead btn btn-default text-white" data-toggle="modal" data-target="#Education" style="padding: 30px">
-                <img src="/assets/img/curriculum/education.png" width="100" alt="ACADEMIA"/>
-                <br><text style="font-family:verdana; font-size:15pt"> Education </text>
-            </button>
-            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Skills" style="padding: 30px">
-                <img src="/assets/img/curriculum/skills.png" width="100" alt="SKILLS"/>
-                <br><text style="font-family:verdana; font-size:15pt"> Skills </text>
-            </button>
-            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Experience" style="padding: 30px">
-                <img src="https://www.freeiconspng.com/uploads/customers-icon-3.png" width="100" alt="WORK"/>
-                <br><text style="font-family:verdana; font-size:15pt"> Experience </text>
-            </button>
-            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Memberships" style="padding: 30px">
-                <img src="https://www.freeiconspng.com/uploads/communication-community-connection-global-internet-network-icon--14.png" width="100" alt="GROUPS"/>
-                <br><text style="font-family:verdana; font-size:15pt"> Memberships </text>
-            </button>
-            <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#Awards" style="padding: 30px">
-                <img src="/assets/img/curriculum/awards.png" width="100" alt="AWARD"/>
-                <br><text style="font-family:verdana; font-size:15pt"> Awards </text>
-            </button>
-        </nav>
+  <div class="container">
+    <h3 class="text-center text-uppercase text-white mt-0">Curriculum</h3>
+    <div class="row">
+      {% for post in site.categories.curriculum %}
+      <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+              <a class="btn btn-xl btn-outline-light" href="{{ post.permalink }}" style="border: none">
+                <img src="{{ post.images }}" width="100" alt="{{ post.title }}"/>
+                <br>
+                <text style="font-family:verdana; font-size:15pt">{{ post.title }}</text>
+              </a>
+          </div>
+      </div>
+      {% endfor %}
     </div>
-    <div class="container mb-0">
-        <div class="text-center">
-            <a class="btn btn-xl btn-outline-light" href="/assets/pdf/Kevin_Assogba_Resume.pdf" target="_blank">
-                <i class="fas fa-download mr-2"></i>
-                Download Resume!
-            </a>
-        </div>
-    </div>
+  </div>
+  <div class="container mt-5">
+      <div class="text-center">
+          <a class="btn btn-xl btn-outline-light" href="/assets/pdf/Kevin_Assogba_Resume.pdf" target="_blank">
+              <i class="fas fa-download mr-2"></i>
+              Download Resume!
+          </a>
+      </div>
+  </div>
 </section>
 
 <!-- About Me Section -->
@@ -100,7 +91,7 @@ images:
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <ol>
-                            {% for ref in site.data.refs limit: 5 %}
+                            {% for ref in site.data.refs limit: 4 %}
                             <li>
                                 <p>{{ ref.names }}, {{ ref.year }}. <cite> {{ ref.title }}</cite>. {{ ref.journal }}.
                                     {% if ref.link %}
@@ -132,16 +123,17 @@ images:
         <hr class="star-light">
         <div class="row">
             {% for post in site.categories.projects %}
-            <div class="col-xl-4 col-md-6 col-lg-6 col-12 py-4 px-2">
+            <div class="col-md-6 col-lg-3 py-4 px-2">
                 <div class="card border-0 bg-transparent">
-                    <img class="card-img-top w-50 h-50 mb-3 mx-auto" src="{{ post.images }}" alt="">
                     <div class="card-body text-center">
                         <h5 class="card-title mb-3">{{ post.title }}</h5>
                         <div class="card-text text-black">
                             <p>{{ post.excerpt }}</p>
-                            <a class="btn btn-block bg-secondary text-white" href="{{ post.permalink }}">Learn More</a>
                         </div>
                     </div>
+                </div>
+                <div class="text-center">
+                    <a class="btn btn-block bg-secondary text-white" href="{{ post.permalink }}">Learn More</a>
                 </div>
             </div>
             {% endfor %}

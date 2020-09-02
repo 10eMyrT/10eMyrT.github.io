@@ -6,13 +6,6 @@
   journal: Journal of Cleaner Production, 232, 12-29
   link: https://doi.org/10.1016/j.jclepro.2019.05.344
 
-- names: 梁喜(Liang, X.), <b>凯文(Assogba, K.)</b>
-  year: 2019
-  title: 考虑客户聚类与产品回收的两级闭环物流网络选址路径优化(Two-echelon closed-loop logistics network location-routing optimization basedon customer clustering and product recovery)
-  journal: >
-    计算机应用(Journal of Computer Applications), 39(2):604-610. <i>Note: Published in Mandarin</i>
-  link: /assets/pdf/考虑客户聚类与产品回收的两级闭环物流网络选址路径优化.pdf
-
 - names: Wang, Y., <b>Assogba, K.</b>, Liu, Y., Ma, X., Xu, M., Wang, Y.
   year: 2018
   title: Two-echelon location-routing optimization with time windows based on customer clustering
@@ -55,9 +48,16 @@
   journal: Systems Science & Control Engineering, 6(2), 10-23
   link: https://doi.org/10.1080/21642583.2018.1480434
 
-- names: 梁喜(Liang, X.), <b>凯文(Assogba, K.)</b>
-  year: 2017
-  title: 模糊综合评价法在西非国家国内快递行业的应用研究(Application of fuzzy comprehensive evaluation method in the West African countries domestic courier industry)
+- names: 梁喜 (Liang, X.), <b>凯文 (Assogba, K.)</b>
+  year: 2019
+  title: 考虑客户聚类与产品回收的两级闭环物流网络选址路径优化 (Two-echelon closed-loop logistics network location-routing optimization basedon customer clustering and product recovery)
   journal: >
-    物流工程与管理(Logistics engineering and management), 39(1):67-70. <i>Note: Published in Mandarin</i>
+    计算机应用 (Journal of Computer Applications), 39(2):604-610. <i>Note: Published in Mandarin</i>
+  link: /assets/pdf/考虑客户聚类与产品回收的两级闭环物流网络选址路径优化.pdf
+
+- names: 梁喜 (Liang, X.), <b>凯文 (Assogba, K.)</b>
+  year: 2017
+  title: 模糊综合评价法在西非国家国内快递行业的应用研究 (Application of fuzzy comprehensive evaluation method in the West African countries domestic courier industry)
+  journal: >
+    物流工程与管理 (Logistics engineering and management), 39(1):67-70. <i>Note: Published in Mandarin</i>
   link: /assets/pdf/模糊综合评价法在西非国家国内快递行业的应用研究.pdf
